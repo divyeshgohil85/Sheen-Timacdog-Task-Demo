@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+.App-div {
+  /* background-color: #282c34; */
+  background: linear-gradient(45deg, #274b83, #ebabab);
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.note {
+  border-radius: 15px;
+  margin: 4px;
+  color: #fff;
+  word-wrap: break-word;
+  backdrop-filter: blur(5px);
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.326);
+  justify-content: space-between;
+  flex-direction: column;
+  min-width: 90%;
+}
+.text-fromat {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 12em;
+}
+.pointer {
+  cursor: pointer;
+}
+.input-div {
+  margin: 4px;
+  display: flex;
+  text-align: left;
+}
+label {
+  width: 4em;
+}
+input,
+textarea {
+  border-radius: 4px;
+  border: none;
+  min-height: 2em;
+  width: 15em;
+}
+@media only screen and (max-width: 768px) {
+  #search {
+    width: 10em;
+  }
+}
+.rightDiv {
+  margin-left: auto;
+}
+button {
+  color: white;
+  padding: 8px;
+  background: transparent;
+  text-align: center;
+  border: 1px solid #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+}
+button:hover {
+  color: white;
+}
+.button1:hover {
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.button2:hover {
+  background-color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.button3:hover {
+  background-color: #008cba;
+  border: 1px solid #008cba;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 5em;
+  z-index: 1;
+}
+.dropdown-content div {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+.dropdown-content div:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
